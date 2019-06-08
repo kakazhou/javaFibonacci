@@ -15,3 +15,6 @@ sh demo.sh 10
 > 编译带包的包
 - javac -cp package_path path/xx.java
 - java -cp package_path path/package_name.xx
+
+> 将编译好的class文件放到单独的文件夹中
+- javac -cp package_path -d out/  src/*.java
