@@ -1,16 +1,16 @@
 package com.src;
-
+import java.math.BigInteger;
 public class Test1 {
-    public static long add(int maxVal) {
-        long value = 0;
-        long lastValue = 0;
-        long nextValue = 0;
+    public static BigInteger add(int maxVal) {
+        BigInteger value = BigInteger.ZERO;
+        BigInteger lastValue = BigInteger.ZERO;
+        BigInteger nextValue = BigInteger.ZERO;
 
         for (int i = 0; i <= maxVal; ++i) {
             if (i == 1) {
-                value = 1;
+                value = BigInteger.ONE;
             }
-            nextValue = value + lastValue;
+            nextValue = value.add(lastValue);
 
             if (i >= 2) {
                 lastValue = value;

@@ -1,6 +1,6 @@
 package com.src;
-
-import static com.src.Test1.add;
+import java.math.BigInteger;
+import com.src.Test1;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Main {
             return;
         }
         int maxval = Integer.parseInt(args[0]);
-        long res =  add(maxval);
+        BigInteger res = Test1.add(maxval);
         System.out.println(String.format("第个%d值是：%d", maxval, res));
     }
 }
